@@ -2,7 +2,7 @@
 snowflake-snowpark-python
 streamlit
 
-name: app_environment
+name: requirements.txt
 channels:
   - snowflake
 dependencies:
