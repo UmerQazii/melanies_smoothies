@@ -18,12 +18,11 @@ my_dataframe = session.table("smoothies.public.fruit_options").select(col('FRUIT
 # st.stop()
 # New section to display fruityvice nutrition information import requests
 
-st.text(fruityvice_response)
 
 # New section to display fruityvice nutrition information
 import requests
 #fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
-#st.text(fruityvice_response.json())
+st.text(fruityvice_response.json())
 # Convert the Snowpark Dataframe to Pandas Dataframe to use the LOC function
 pd_df = my_dataframe.to_pandas()
 # st.dataframe(pd_df)
