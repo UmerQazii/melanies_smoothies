@@ -18,7 +18,7 @@ my_dataframe = session.table("smoothies.public.fruit_options").select(col('FRUIT
 # st.stop()
 # New section to display fruityvice nutrition information import requests
 
-st.text(fruityvice_response)
+#st.text(fruityvice_response)
 
 # New section to display fruityvice nutrition information
 import requests
