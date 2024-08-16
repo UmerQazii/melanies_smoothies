@@ -1,11 +1,6 @@
 # requirements.txt
+snowflake-connector-python
 snowflake-snowpark-python
-streamlit
-
-name: requirements.txt
-channels:
-  - snowflake
-dependencies:
-  - python=3.8.*
-  - snowflake-snowpark-python=
-  - streamlit=
+streamlit==1.31.1
+requests
+pandas
