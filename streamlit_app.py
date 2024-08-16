@@ -45,7 +45,7 @@ if ingredients_list:
     time_to_insert = st.button('Submit Order')
 
     if time_to_insert:
-        my_insert_stmt = """INSERT INTO smoothies.public.orders (ingredients, name_on_order)
+        my_insert_stmt = """INSERT INTO smoothies.public.orders (ingredients,name_on_order)
                             VALUES (%s, %s)"""
         session.sql(my_insert_stmt, (ingredients_string, name_on_order)).collect()
         
